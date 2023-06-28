@@ -1,19 +1,19 @@
 {
 	"site_title": {
-		"ja": "遊具のある公園マップ",
-		"en": "playground equipment map"
+		"ja": "十三新発見マップ2023",
+		"en": "Juso New Discovery Map 2023"
 	},
 	"site_subtitle": {
-		"ja": "by みんなで公園マッププロジェクト",
-		"en": "by playground map for everyone project"
+		"ja": "by 淀川アートネット",
+		"en": "by YODOGAWA ART-NET"
 	},
 	"about": {
-		"ja": "みんなで公園マッププロジェクトとは",
-		"en": "playground equipment map development site"
+		"ja": "十三新発見マップ2023とは",
+		"en": "about Juso New Discovery Map 2023"
 	},
 	"about_message": {
-		"ja": "公園の良さをみんなで共有するため、公園や遊具の情報を集めてマップを作る活動です。詳しくは<a href='https://k-sakanoshita.medium.com/1173cab3fd72'>プロジェクトのブログへ</a>",
-		"en": "In order to share the goodness of the park with everyone, this is an activity to collect information on the park and playground equipment and create a map."
+		"ja": "淀川アートネットによる十三のオススメスポットが詰まったマップです。詳しくは<a href='https://yodogawaartnet.jimdofree.com/'>公式サイト</a>へ",
+		"en": "A map filled with thirteen recommended spots by YODOGAWA ART-NET."
 	},
 	"owner": {
 		"ja": "プロジェクトのブログ・サイトへ",
@@ -21,15 +21,15 @@
 	},
 	"licence_title": {
 		"ja": "利用しているデータについて",
-		"en": "about playground equipment map"
+		"en": "What data are you using"
 	},
 	"licence_message": {
 		"ja": "このサイトで使われているデータは、OpenStreetMapとプロジェクトのデータを組み合わせています。</a>",
 		"en": "We are all collecting information about parks with playground equipment and making maps.<br>The data used is a combination of OpenStreetMap and playground equipment for everyone project.</a>"
 	},
 	"develop_site": {
-		"ja": "遊具のある公園マップのソースコード",
-		"en": "Park map source code with playground equipment"
+		"ja": "十三新発見マップ2023のソースコード",
+		"en": "Juso New Discovery Map 2023 source code"
 	},
 	"more_message": {
 		"ja": "",

@@ -25,22 +25,28 @@
         "bookmark": true
     },
     "PoiViewZoom": {
-        "Playgrounds_Poi": 18,
-        "Playgrounds_Area": 14,
-        "activity": 16
+        "arts": 18,
+        "restaurant": 18,
+        "shop": 18,
+        "pub": 18,
+        "bath": 18,
+        "theatre": 18,
+        "activity": 15
     },
     "PoiView": {
         "targets": [
-            "Playgrounds_Poi",
-            "Playgrounds_Area",
+            "arts",
+            "restaurant",
+            "shop",
+            "pub",
+            "bath",
+            "theatre",
             "activity"
         ],
         "update_mode": "filter" // listTable更新時 all:全て / filter:絞り込み / "":非連動
     },
     "listTable": {
         "targets": [ // target名:overpass名を表示 / activity:google sheetsを表示 / tags:osm poi種別名を表示
-            "Playgrounds_Poi",
-            "Playgrounds_Area",
             "activity"
         ],
         "playback": {
@@ -52,11 +58,11 @@
     },
     "google": {
         "Analytics": "",
-        "AppScript": "https://script.google.com/macros/s/AKfycbzQBY5sfw0pv7lI64J71pP0yBEIje2AbKcWenoJI1PVQcZTtDSbwTwnnXYcbsGKCtZS/exec",
+        "AppScript": "https://script.google.com/macros/s/AKfycbxsbHp4MCL6HriWeyvZ6GVc4yqMqMZyikeKufmGkJssJOsSCxhuV--cDR0GEy_MO2GCJA/exec",
         "targetName": "activity"
     },
     "splash": {
-        "url": "./image/Playgrounds.png"
+        "url": "./image/JusoNewDiscoveryMap2023.png"
     },
     "static": {
         "mode": false,
@@ -81,7 +87,7 @@
         },
         {
             "glot-model": "owner",
-            "linkto": "https://k-sakanoshita.medium.com/1173cab3fd72",
+            "linkto": "https://yodogawaartnet.jimdofree.com/",
             "divider": true
         },
         {
@@ -91,7 +97,7 @@
         },
         {
             "glot-model": "develop_site",
-            "linkto": "https://github.com/armd-02/Playgrounds",
+            "linkto": "https://github.com/armd-02/JusoNewDiscoveryMap2023",
             "divider": false
         },
         {

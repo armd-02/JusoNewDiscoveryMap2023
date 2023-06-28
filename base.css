@@ -213,9 +213,10 @@ span.fs-14{
 }
 
 .modal-dialog-fluid {
-    max-width: inherit !important;
+    max-width: 800px !important;
     max-height: 98% !important;
-    width: 98% !important;
+    width: 98%;
+    margin: auto !important;
 }
 
 .modal-body {
