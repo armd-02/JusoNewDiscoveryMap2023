@@ -32,6 +32,7 @@
         "pub": 18,
         "bath": 18,
         "theatre": 18,
+        "library": 18,
         "activity": 15
     },
     "PoiView": {
@@ -42,6 +43,7 @@
             "pub",
             "bath",
             "theatre",
+            "library",
             "activity"
         ],
         "update_mode": "filter" // listTable更新時 all:全て / filter:絞り込み / "":非連動
