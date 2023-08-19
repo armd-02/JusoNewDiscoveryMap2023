@@ -220,10 +220,16 @@
             "overpass": [
                 "relation[\"amenity\"=\"hospital\"]",
                 "way[\"amenity\"=\"hospital\"]",
-                "node[\"amenity\"=\"hospital\"]"
+                "node[\"amenity\"=\"hospital\"]",
+                "way[\"amenity\"=\"clinic\"]",
+                "node[\"amenity\"=\"clinic\"]",
+                "way[\"amenity\"=\"doctor\"]",
+                "node[\"amenity\"=\"doctor\"]"
             ],
             "tags": [
-                "amenity=hospital"
+                "amenity=hospital",
+                "amenity=clinic",
+                "amenity=doctor"
             ],
             "expression": {
                 "stroke": "#606090",

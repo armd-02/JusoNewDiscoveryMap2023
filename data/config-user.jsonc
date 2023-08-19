@@ -11,12 +11,12 @@
         "maxbounds": "",
         "_maxbounds": [
             [
-                35.09545,
-                135.86492
+                135.5191988,
+                34.7084749
             ],
             [
-                34.94088,
-                136.11914
+                135.4522882,
+                34.7365887
             ]
         ],
         "initZoom": 14,
@@ -27,23 +27,27 @@
     },
     "PoiViewZoom": {
         "arts": 18,
+        "disaster": 18,
         "restaurant": 18,
         "shop": 18,
         "pub": 18,
         "bath": 18,
         "theatre": 18,
         "library": 18,
+        "hospital": 18,
         "activity": 15
     },
     "PoiView": {
         "targets": [
             "arts",
+            "disaster",
             "restaurant",
             "shop",
             "pub",
             "bath",
             "theatre",
             "library",
+            "hospital",
             "activity"
         ],
         "update_mode": "filter" // listTable更新時 all:全て / filter:絞り込み / "":非連動
