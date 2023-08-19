@@ -230,13 +230,13 @@
                 "node[\"amenity\"=\"hospital\"]",
                 "way[\"amenity\"=\"clinic\"]",
                 "node[\"amenity\"=\"clinic\"]",
-                "way[\"amenity\"=\"doctor\"]",
-                "node[\"amenity\"=\"doctor\"]"
+                "way[\"amenity\"=\"doctors\"]",
+                "node[\"amenity\"=\"doctors\"]"
             ],
             "tags": [
                 "amenity=hospital",
                 "amenity=clinic",
-                "amenity=doctor"
+                "amenity=doctors"
             ],
             "expression": {
                 "stroke": "#606090",
