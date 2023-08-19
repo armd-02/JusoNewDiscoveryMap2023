@@ -97,10 +97,13 @@
         "shop": {
             "overpass": [
                 "node[\"shop\"]",
-                "way[\"shop\"]"
+                "way[\"shop\"]",
+                "node[\"amenity\"=\"cinema\"]",
+                "way[\"amenity\"=\"cinema\"]"
             ],
             "tags": [
-                "shop"
+                "shop",
+                "amenity=cinema"
             ],
             "expression": {
                 "stroke": "#507070",

@@ -40,7 +40,7 @@ class modal_Takeout {
         }
         $("#name").html(name == null ? "-" : name);
         $("#category-icon").attr("src", tags.takeaway_icon);
-        $("#category").html(poiCont.get_catname(tags));
+        $("#category").html(poiCont.getCatnames(tags));
 
         // opening_hours
         let openhour;

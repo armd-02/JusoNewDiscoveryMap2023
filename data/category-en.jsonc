@@ -1,5 +1,6 @@
 {
     "category": {
+        // The following order will also be the priority when retrieving the category name.
         "*": {
             "*": "-"
         },
@@ -194,10 +195,12 @@
             "climbingframe": "jungle gym",
             "climbingwall": "climbingwall",
             "cushion": "cushion",
+            "dome": "dome",
             "exercise": "exercise",
             "hopscotch": "hopscotch",
             "horizontal_bar": "horizontal_bar",
             "map": "map",
+            "mound": "mound",
             "playhouse": "playhouse",
             "roundabout": "roundabout",
             "sandpit": "sandpit",
@@ -259,6 +262,14 @@
             "surveillance": "surveillance",
             "works": "works"
         },
+        "leisure": {
+            "amusement_arcade": "amusement arcade",
+            "garden": "garden",
+            "pitch": "pitch",
+            "park": "park",
+            "playground": "playground",
+            "swimming_pool": "swimming pool"
+        },
         "landuse": {
             "farmland": "farmland",
             "religious": "religious",
@@ -270,14 +281,6 @@
             "grass": "grass",
             "retail": "retail",
             "recreation_ground": "recreation ground"
-        },
-        "leisure": {
-            "amusement_arcade": "amusement arcade",
-            "garden": "garden",
-            "pitch": "pitch",
-            "park": "park",
-            "playground": "playground",
-            "swimming_pool": "swimming pool"
         },
         "railway": {
             "station": "station"

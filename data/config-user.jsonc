@@ -1,11 +1,13 @@
 // Community Mapmaker User Config
 {
     "default": {
+        "tile_default": "MapTiler", // タイル一覧は config-system.jsonc へ
         "keep_default_view": false,
-        "default_view": [
-            34.7212,
-            135.4828
+        "viewCenter": [
+            135.4828,
+            34.7212
         ],
+        "viewPitch": 40,
         "maxbounds": "",
         "_maxbounds": [
             [
@@ -21,8 +23,7 @@
         "pc_minZoom": 6,
         "phone_minZoom": 5,
         "maxZoom": 22,
-        "zoomSnap": 0.5,
-        "bookmark": true
+        "zoomSnap": 0.5
     },
     "PoiViewZoom": {
         "arts": 18,
@@ -82,7 +83,7 @@
     "menu": [
         {
             "glot-model": "about",
-            "linkto": "javascript:cMapmaker.about()",
+            "linkto": "javascript:cMapMaker.about()",
             "divider": false
         },
         {
@@ -92,7 +93,7 @@
         },
         {
             "glot-model": "licence_title",
-            "linkto": "javascript:cMapmaker.licence()",
+            "linkto": "javascript:cMapMaker.licence()",
             "divider": false
         },
         {
@@ -115,7 +116,7 @@
         },
         {
             "glot-model": "osm_open",
-            "linkto": "javascript:winCont.osm_open(cMapmaker.open_osmid)",
+            "linkto": "javascript:winCont.osm_open(cMapMaker.open_osmid)",
             "divider": false
         },
         {
@@ -137,7 +138,7 @@
             },
             {
                 "btn_class": "btn btn-light border-secondary",
-                "code": "javascript:cMapmaker.url_share()",
+                "code": "javascript:cMapMaker.url_share()",
                 "icon_class": "fas fa-clone",
                 "btn_glot_name": "share_link"
             }

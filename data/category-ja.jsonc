@@ -1,5 +1,6 @@
 {
     "category": {
+        // 下記の順番はカテゴリ名を取得する時の優先順位にもなる
         "*": {
             "*": "-"
         },
@@ -194,10 +195,12 @@
             "climbingframe": "ジャングルジム",
             "climbingwall": "クライミングウォール",
             "cushion": "ふわふわドーム",
+            "dome": "ドーム",
             "exercise": "健康遊具",
             "hopscotch": "遊べるフィールド",
             "horizontal_bar": "鉄棒",
             "map": "マップ",
+            "mound": "円丘",
             "playhouse": "プレイハウス",
             "roundabout": "メリーゴーランド",
             "sandpit": "砂場",
@@ -259,6 +262,14 @@
             "surveillance": "監視機器",
             "works": "工場"
         },
+        "leisure": {
+            "amusement_arcade": "ゲームセンター",
+            "garden": "庭",
+            "pitch": "グラウンド",
+            "park": "公園",
+            "playground": "児童公園",
+            "swimming_pool": "水泳プール"
+        },
         "landuse": {
             "farmland": "農地",
             "religious": "信仰",
@@ -270,14 +281,6 @@
             "retail": "商業エリア",
             "grass": "芝生",
             "recreation_ground": "レクリエーション広場"
-        },
-        "leisure": {
-            "amusement_arcade": "ゲームセンター",
-            "garden": "庭",
-            "pitch": "グラウンド",
-            "park": "公園",
-            "playground": "児童公園",
-            "swimming_pool": "水泳プール"
         },
         "railway": {
             "station": "鉄道駅"

@@ -26,7 +26,7 @@
             "poi_fields": [
                 "id",
                 "#category",
-                "#parent.name",
+                "#parent.name,name",
                 "min_age"
             ],
             "act_fields": [
