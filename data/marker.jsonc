@@ -18,6 +18,7 @@
                 "college": "college.svg",
                 "community_centre": "town-hall.svg",
                 "courthouse": "courthouse.svg",
+                "coworking_space":"commercial.svg",
                 "crematorium": "marker-stroked.svg",
                 "cinema": "cinema.svg",
                 "doctors": "doctor.svg",
@@ -84,6 +85,9 @@
                 "residential": "residential-community.svg",
                 "retail": "shop.svg",
                 "yes": "home.svg"
+            },
+            "craft":{
+                "photographer":"attraction.svg"
             },
             "diplomatic": {
                 "embassy": "diplomatic.svg"

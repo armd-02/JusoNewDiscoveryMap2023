@@ -17,6 +17,7 @@
             "college": "college",
             "community_centre": "community center",
             "courthouse": "courthouse",
+            "coworking_space":"coworking space",
             "crematorium": "crematorium",
             "cinema": "cinema",
             "doctors": "doctor",
@@ -83,6 +84,9 @@
             "residential": "residential",
             "retail": "retail",
             "yes": "building"
+        },
+        "craft":{
+            "photographer":"photographer"
         },
         "diplomatic": {
             "embassy": "embassy"

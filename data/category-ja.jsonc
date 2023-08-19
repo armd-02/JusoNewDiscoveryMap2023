@@ -17,6 +17,7 @@
             "college": "大学",
             "community_centre": "公民館",
             "courthouse": "裁判所",
+            "coworking_space":"コワーキングスペース",
             "crematorium": "火葬場",
             "cinema": "映画館",
             "doctors": "医者",
@@ -83,6 +84,9 @@
             "residential": "住居",
             "retail": "店舗",
             "yes": "建物"
+        },
+        "craft":{
+            "photographer":"写真館"
         },
         "diplomatic": {
             "embassy": "大使館"

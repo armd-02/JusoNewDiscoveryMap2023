@@ -99,11 +99,18 @@
                 "node[\"shop\"]",
                 "way[\"shop\"]",
                 "node[\"amenity\"=\"cinema\"]",
-                "way[\"amenity\"=\"cinema\"]"
+                "way[\"amenity\"=\"cinema\"]",
+                "node[\"amenity\"=\"coworking_space\"]",
+                "way[\"amenity\"=\"coworking_space\"]",
+                "node[\"craft\"=\"photographer\"]",
+                "way[\"craft\"=\"photographer\"]",
+                
             ],
             "tags": [
                 "shop",
-                "amenity=cinema"
+                "amenity=cinema",
+                "amenity=coworking_space",
+                "craft=photographer"
             ],
             "expression": {
                 "stroke": "#507070",
