@@ -25,34 +25,22 @@
         "maxZoom": 22,
         "zoomSnap": 0.5
     },
+    "DetailViewZoom": 17,
     "PoiViewZoom": {
-        "arts": 18,
-        "disaster": 18,
-        "restaurant": 18,
-        "shop": 18,
-        "pub": 18,
-        "bath": 18,
-        "theatre": 18,
-        "library": 18,
-        "hospital": 18,
+        "JusoNewDiscoveryMap": 18,
         "activity": 15
     },
     "PoiView": {
         "targets": [
-            "arts",
-            "disaster",
-            "restaurant",
-            "shop",
-            "pub",
-            "bath",
-            "theatre",
-            "library",
-            "hospital",
+            "JusoNewDiscoveryMap",
             "activity"
         ],
         "update_mode": "filter" // listTable更新時 all:全て / filter:絞り込み / "":非連動
     },
     "listTable": {
+        "categorys": [ // カテゴリ選択 / targets:ターゲットリスト / activity:アクティビティリスト // その他:ターゲット指定
+            ""
+        ],
         "targets": [ // target名:overpass名を表示 / activity:google sheetsを表示 / tags:osm poi種別名を表示
             "activity"
         ],
@@ -117,7 +105,7 @@
     "detail_menu": [
         {
             "glot-model": "act_add",
-            "linkto": "javascript:modal_activities.edit({form:'Playgrounds'})",
+            "linkto": "javascript:modal_activities.edit({form:'JusoNewDiscovery'})",
             "divider": false
         },
         {
@@ -138,7 +126,7 @@
         "buttons": [
             {
                 "btn_class": "btn btn-light border-secondary mr-2",
-                "code": "javascript:modal_activities.edit({form:'Playgrounds'})",
+                "code": "javascript:modal_activities.edit({form:'JusoNewDiscovery'})",
                 "icon_class": "fas fa-plus",
                 "btn_glot_name": "add_activity"
             },

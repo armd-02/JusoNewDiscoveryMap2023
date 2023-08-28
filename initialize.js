@@ -18,6 +18,7 @@ var OvPassCnt = new OverPassControl();
 var MapLibre = new Maplibre();
 var GeoCont = new Geocont();
 var listTable = new ListTable();
+var poiMarker = new PoiMarker();
 var cMapMaker = new CMapMaker();
 
 // initialize

@@ -7,9 +7,11 @@
         "amenity": {
             "arts_centre": "arts centre",
             "bar": "bar",
+            "bank": "bank",
             "bbq": "bbq",
             "bench": "bench",
             "bicycle_parking": "bicycle parking",
+            "bicycle_rental":"bicycle rental",
             "bus_station": "bus station",
             "cafe": "cafe",
             "clinic": "clinic",
@@ -20,6 +22,7 @@
             "coworking_space":"coworking space",
             "crematorium": "crematorium",
             "cinema": "cinema",
+            "dentist":"dentist",
             "doctors": "doctor",
             "drinking_water": "drinking water",
             "fast_food": "fast food",
@@ -31,6 +34,7 @@
             "hospital": "Hospital",
             "ice_cream": "ice cream",
             "internet_cafe": "internet cafe",
+            "karaoke_box":"karaoke box",
             "kindergarten": "kindergarten",
             "library": "library",
             "nightclub": "nightclub",
@@ -86,6 +90,7 @@
             "yes": "building"
         },
         "craft":{
+            "confectionery": "confectionery",
             "photographer":"photographer"
         },
         "diplomatic": {
@@ -143,6 +148,7 @@
             "health_food": "health food",
             "ice_cream": "ice cream",
             "interior_decoration": "interior decoration",
+            "jewelry":"jewelry store",
             "kiosk": "kiosk",
             "laundry": "laundry",
             "mall": "shopping mall",
@@ -153,12 +159,15 @@
             "pasta": "pasta",
             "pastry": "pastry",
             "pawnbroker": "pawnbroker",
+            "photo":"photo",
             "rice": "rice",
             "seafood": "seafood",
             "second_hand": "second hand",
             "shoes": "shoes",
             "spices": "spices",
             "supermarket": "supermarket",
+            "stationery":"stationery",
+            "tailor": "tailor",
             "tea": "tea",
             "ticket": "ticket",
             "tobacco": "pipe",
@@ -224,6 +233,7 @@
             "zipwire": "zipwire"
         },
         "tourism": {
+            "apartment":"apartment",
             "attraction": "attraction",
             "artwork": "artwork",
             "gallery": "gallery",

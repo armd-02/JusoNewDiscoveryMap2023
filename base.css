@@ -96,15 +96,6 @@ img.thumbnail {
 }
 
 img.normal {
-    background-size: cover;
-    float: left;
-    padding: 4px !important;
-    height: 32px !important;
-    width: 32px !important;
-    object-fit: contain;
-}
-
-img.circle {
     background: url("./image/icon_circle.svg");
     background-size: cover;
     float: left;
@@ -183,14 +174,14 @@ span.icon {
     white-space: nowrap;
 }
 
-span.icon_normal {
-    color: #ffffffee;
-    background: rgba(0, 0, 0, 0.5);
+span.normal {
+    color: #000000;
+    background: rgba(255, 255, 255, 0.3);
 }
 
-span.icon_attention {
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.6);
+span.attention {
+    color: #000000;
+    background: rgba(255, 255, 255, 0.95);
 }
 
 /* マーカーのフォントサイズ選択 */

@@ -2,7 +2,7 @@
 {
     "icon": {
         "path": "maki-icon",
-        "circle": 32,
+        "normal": 32,
         "attention": 48
     },
     "system": {
