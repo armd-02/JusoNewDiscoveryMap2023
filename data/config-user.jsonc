@@ -38,8 +38,8 @@
         "update_mode": "filter" // listTable更新時 all:全て / filter:絞り込み / "":非連動
     },
     "listTable": {
-        "categorys": [ // カテゴリ選択 / targets:ターゲットリスト / activity:アクティビティリスト // その他:ターゲット指定
-            ""
+        "categorys": [ // カテゴリ選択 / targets:ターゲットリスト / activity:アクティビティリスト // tags:タグ
+            "tags"
         ],
         "targets": [ // target名:overpass名を表示 / activity:google sheetsを表示 / tags:osm poi種別名を表示
             "activity"

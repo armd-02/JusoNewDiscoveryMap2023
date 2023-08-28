@@ -260,7 +260,8 @@ class CMapMaker {
 				this.moveMapBusy = 2;
 				this.get_poi().then((status) => {
 					this.moveMapBusy = 0;
-					let targets = (Conf.listTable.targets.indexOf("targets") > -1) ? [listTable.getSelCategory()] : ["-"];
+					//let targets = (Conf.listTable.targets.indexOf("targets") > -1) ? [listTable.getSelCategory()] : ["-"];
+					let targets = [listTable.getSelCategory()];
 					if (Conf.PoiView.update_mode == "all" || status.update) {
 						listTable.makeList();					// view all list
 						listTable.makeCategory(Conf.listTable.categorys);
