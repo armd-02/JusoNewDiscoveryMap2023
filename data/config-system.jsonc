@@ -12,14 +12,18 @@
             "https://overpass-api.de/api/interpreter"
         ]
     },
-    "tile_default": "OSM_Standard",
     "tile": {
+        "OSMFJ": {
+            "style": "./data/style.json"
+        },
+        /*
         "MapTiler": {
             "style": "https://api.maptiler.com/maps/c9876a21-f16a-4a84-abc0-950badd4631e/style.json?key=Eq2IyrHsOEGFU1W1fvd7"
         },
         "MapTiler(Memories)": {
             "style": "https://api.maptiler.com/maps/2e4db38a-b862-444d-bcfe-fefe51429073/style.json?key=Eq2IyrHsOEGFU1W1fvd7"
         },
+        */
         "OSM_Standard": {
             "style": {
                 "version": 8,

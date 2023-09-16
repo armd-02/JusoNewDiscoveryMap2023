@@ -54,7 +54,7 @@ class CMapMaker {
 				resolve("cMapMaker: no static mode");
 			} else {
 				$.ajax({ "type": 'GET', "dataType": 'json', "url": Conf.static.osmjson, "cache": false }).done(function (data) {
-					let ovanswer = OvPassCnt.set_osmjson(data);
+					let ovanswer = OvPassCnt.setOsmJson(data);
 					poiCont.add_geojson(ovanswer);
 					resolve(ovanswer);
 				}).fail(function (jqXHR, statusText, errorThrown) {
@@ -115,12 +115,12 @@ class CMapMaker {
 			for (let [key, value] of Object.entries(Conf.PoiViewZoom)) {
 				if (key !== Conf.google.targetName) PoiLoadZoom = value < PoiLoadZoom ? value : PoiLoadZoom;
 			};
-			if ((MapLibre.getZoom(true) < PoiLoadZoom) && !Conf.static.mode) {
+			if ((MapLibre.getZoom(true) < PoiLoadZoom)) {
 				winCont.spinner(false);
 				console.log("[success]cMapMaker: get_poi End(more zoom).");
 				resolve({ "update": true });
 			} else {
-				OvPassCnt.get(keys, status_write).then(ovanswer => {
+				OvPassCnt.getGeojson(keys, status_write).then(ovanswer => {
 					winCont.spinner(false);
 					if (ovanswer) poiCont.add_geojson(ovanswer);
 					console.log("[success]cMapMaker: get_poi End.");

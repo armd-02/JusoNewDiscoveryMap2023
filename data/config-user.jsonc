@@ -1,29 +1,30 @@
 // Community Mapmaker User Config
 {
     "default": {
-        "tile_default": "MapTiler", // タイル一覧は config-system.jsonc へ
+        "tile_default": "OSMFJ", // タイル一覧は config-system.jsonc へ
         "keep_default_view": false,
         "viewCenter": [
             135.4828,
             34.7212
         ],
         "viewPitch": 40,
-        "maxbounds": "",
-        "_maxbounds": [
+        "_maxbounds": "",
+        "maxbounds": [
             [
-                135.5191988,
-                34.7084749
+                135.45,
+                34.7
             ],
             [
-                135.4522882,
-                34.7365887
+                135.52,
+                34.75
             ]
         ],
         "initZoom": 14,
         "pc_minZoom": 6,
         "phone_minZoom": 5,
         "maxZoom": 22,
-        "zoomSnap": 0.5
+        "zoomSnap": 0.5,
+        "editMode": false       // 編集メニューの表示/非表示
     },
     "DetailViewZoom": 17,
     "PoiViewZoom": {
@@ -53,25 +54,15 @@
     },
     "google": {
         "Analytics": "",
-        "AppScript": "https://script.google.com/macros/s/AKfycbxsbHp4MCL6HriWeyvZ6GVc4yqMqMZyikeKufmGkJssJOsSCxhuV--cDR0GEy_MO2GCJA/exec",
+        "AppScript": "https://script.google.com/macros/s/AKfycbwjifA-EwQCdjFbwwdV03-V2k66jigc5zzrQ50jR0j-wZPyhshJMs0AxFygZC3OQKxHow/exec",
         "targetName": "activity"
     },
     "splash": {
         "url": "./image/JusoNewDiscoveryMap2023.png"
     },
     "static": {
-        "mode": false,
-        "osmjson": "",
-        "osmbounds": {
-            "NW": {
-                "lat": 45.7392,
-                "lng": 119.0340
-            },
-            "SE": {
-                "lat": 20.5444,
-                "lng": 144.8863
-            }
-        }
+        "mode": true,
+        "osmjson": "./data/static20230916.json"
     },
     // トップメニュー一覧
     "menu": [
@@ -103,11 +94,13 @@
     ],
     // 詳細表示のモーダル設定
     "detail_menu": [
+        /*
         {
             "glot-model": "act_add",
             "linkto": "javascript:modal_activities.edit({form:'JusoNewDiscovery'})",
             "divider": false
         },
+        */
         {
             "glot-model": "osm_open",
             "linkto": "javascript:winCont.osm_open(cMapMaker.open_osmid)",
@@ -124,15 +117,17 @@
         "openfirst": true,
         // 詳細モーダルの追加ボタン 
         "buttons": [
+            /*
             {
                 "btn_class": "btn btn-light border-secondary mr-2",
                 "code": "javascript:modal_activities.edit({form:'JusoNewDiscovery'})",
                 "icon_class": "fas fa-plus",
                 "btn_glot_name": "add_activity"
             },
+            */
             {
                 "btn_class": "btn btn-light border-secondary",
-                "code": "javascript:cMapMaker.url_share()",
+                "code": "javascript:cMapMaker.shareURL()",
                 "icon_class": "fas fa-clone",
                 "btn_glot_name": "share_link"
             }

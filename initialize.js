@@ -8,7 +8,7 @@ const LANG = (window.navigator.userLanguage || window.navigator.language || wind
 const FILES = [
 	"./baselist.html", "./data/config-user.jsonc", './data/config-system.jsonc', './data/config-activities.jsonc',
 	`./data/marker.jsonc`, `./data/category-${LANG}.jsonc`, `data/listtable-${LANG}.jsonc`,
-	`./data/glot-custom.jsonc`, `data/glot-system.jsonc`, './data/overpass-system.jsonc', `./data/overpass-custom.jsonc`];
+	'./data/overpass-system.jsonc', `./data/overpass-custom.jsonc`, `./data/glot-custom.jsonc`, `data/glot-system.jsonc`];
 const glot = new Glottologist();
 var modal_takeout = new modal_Takeout();
 var modal_activities = new modal_Activities();
@@ -16,31 +16,28 @@ var modal_wikipedia = new modal_Wikipedia();
 var basic = new Basic();
 var OvPassCnt = new OverPassControl();
 var MapLibre = new Maplibre();
-var GeoCont = new Geocont();
+var geoCont = new GeoCont();
 var listTable = new ListTable();
 var poiMarker = new PoiMarker();
 var cMapMaker = new CMapMaker();
+var winCont = new WinCont();
 
 // initialize
 console.log("Welcome to Community Map Maker.");
 console.log("initialize: Start.");
 window.addEventListener("DOMContentLoaded", function () {
-	let jqXHRs = [];
-	for (let key in FILES) { jqXHRs.push($.get(FILES[key])) };
-	$.when.apply($, jqXHRs).always(function () {
-		let basehtml = arguments[0][0];												// Get Menu HTML
-		for (let i = 1; i <= 6; i++) {
-			let types = typeof arguments[i][0];
-			Conf = Object.assign(Conf, types == "string" ? JSON5.parse(arguments[i][0]) : arguments[i][0]);
+	const fetchUrls = FILES.map(url => fetch(url).then(res => res.text()));
+	Promise.all(fetchUrls).then(texts => {
+		let basehtml = texts[0];											// Get Menu HTML
+		for (let i = 1; i <= 8; i++) {
+			Conf = Object.assign(Conf, JSON5.parse(texts[i]));
 		};
-		Conf.category_keys = Object.keys(Conf.category);						// Make Conf.category_keys
-		Conf.category_subkeys = Object.keys(Conf.category_sub);					// Make Conf.category_subkeys
-		glot.data = Object.assign(glot.data, JSON5.parse(arguments[7][0]));		// import glot data
-		glot.data = Object.assign(glot.data, JSON5.parse(arguments[8][0]));		// import glot data
-		Conf = Object.assign(Conf, JSON5.parse(arguments[9][0]));				// import OverPass
-		Conf.osm = Object.assign(Conf.osm, JSON5.parse(arguments[10][0]).osm);	// import OverPass
-		window.onresize = winCont.window_resize;    							// 画面サイズに合わせたコンテンツ表示切り替え
-		document.title = glot.get("site_title");								// Title
+		Conf.category_keys = Object.keys(Conf.category);					// Make Conf.category_keys
+		Conf.category_subkeys = Object.keys(Conf.category_sub);				// Make Conf.category_subkeys
+		glot.data = Object.assign(glot.data, JSON5.parse(texts[9]));		// import glot data
+		glot.data = Object.assign(glot.data, JSON5.parse(texts[10]));		// import glot data
+		window.onresize = winCont.window_resize;    						// 画面サイズに合わせたコンテンツ表示切り替え
+		document.title = glot.get("site_title");							// Title
 		winCont.splash(true);
 		listTable.init();
 		winCont.window_resize();												// Set Window Size(mapidのサイズ指定が目的)
@@ -97,7 +94,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			let osmids = poiCont.pois().acts.map(act => { return act.osmid });
 			osmids = osmids.filter(Boolean);
 			if (osmids.length > 0 && !Conf.static.mode) {
-				OvPassCnt.get_osmids(osmids).then(geojson => {
+				OvPassCnt.getOsmIds(osmids).then(geojson => {
 					poiCont.add_geojson(geojson);
 					init_close();
 				});
